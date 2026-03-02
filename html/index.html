@@ -17,19 +17,20 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button id="lang-btn" onclick="toggleLanguage()">English</button></li>
         </ul>
     </nav>
 
     <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Xin chào, mình là <span class="highlight">Vũ Duy Hoàng</span></h1>
-            <p>Data Analyst || Database Administrator || Developer</p>
-            <a href="#projects" class="btn">Xem dự án của mình</a>
+            <h1 data-vi="Xin chào, mình là Vũ Duy Hoàng" data-en="Hi, I am Vu Duy Hoang">Xin chào, mình là Vũ Duy Hoàng</h1>
+            <p data-vi="Data Analyst || Database Administrator || Developer" data-en="Data Analyst || Database Administrator || Developer">Data Analyst || Database Administrator || Developer</p>
+            <a href="#projects" class="btn" data-vi="Xem dự án của mình" data-en="View my projects">Xem dự án của mình</a>
         </div>
     </section>
 
     <section id="skills" class="container">
-        <h2 class="section-title">Kỹ năng chuyên môn</h2>
+        <h2 class="section-title" data-vi="Kỹ năng chuyên môn" data-en="Professional Skills">Kỹ năng chuyên môn</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <h3>Backend</h3>
@@ -47,56 +48,56 @@
     </section>
 
     <section id="projects" class="container bg-light">
-    <h2 class="section-title">Dự án tiêu biểu</h2>
-    <div class="projects-grid">
-        
-        <a href="https://github.com/VuDuyHoang123/cocangua" target="_blank" class="project-link">
-            <div class="project-item">
-                <div class="project-info">
-                    <h3>Game Cờ Cá Ngựa (Java/Web)</h3>
-                    <p>Ứng dụng chơi cờ trực tuyến với giao diện web và backend Java.</p>
-                    <span class="view-more">Xem trên GitHub →</span>
+        <h2 class="section-title" data-vi="Dự án tiêu biểu" data-en="Featured Projects">Dự án tiêu biểu</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/VuDuyHoang123/cocangua" target="_blank" class="project-link">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3 data-vi="Game Cờ Cá Ngựa (Java/Web)" data-en="Seahorse Game (Java/Web)">Game Cờ Cá Ngựa (Java/Web)</h3>
+                        <p data-vi="Web chơi cờ trực tuyến với giao diện web và backend Java." data-en="Online board game with web interface and Java backend.">Web chơi cờ trực tuyến với giao diện web và backend Java.</p>
+                        <span class="view-more" data-vi="Xem trên GitHub →" data-en="View on GitHub →">Xem trên GitHub →</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <a href="https://github.com/VuDuyHoang123/SL" target="_blank" class="project-link">
-            <div class="project-item">
-                <div class="project-info">
-                    <h3>Sign Language</h3>
-                    <p>Ứng dụng mobile xây dựng bằng Flutter giúp đặt sân bóng tiện lợi.</p>
-                    <span class="view-more">Xem trên GitHub →</span>
+            <a href="https://github.com/VuDuyHoang123/SL" target="_blank" class="project-link">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3 data-vi="Sign Language" data-en="Sign Language">Sign Language</h3>
+                        <p data-vi="Ứng dụng nhận diện ngôn ngữ ký hiệu bằng AI." data-en="AI-powered Sign Language recognition app.">Ứng dụng nhận diện ngôn ngữ ký hiệu bằng AI.</p>
+                        <span class="view-more" data-vi="Xem trên GitHub →" data-en="View on GitHub →">Xem trên GitHub →</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <a href="https://github.com/[user_cua_ban]/java-screen-share" target="_blank" class="project-link">
-            <div class="project-item">
-                <div class="project-info">
-                    <h3>Screen Sharing App</h3>
-                    <p>Ứng dụng truyền hình ảnh trực tiếp qua Java Sockets (UDP).</p>
-                    <span class="view-more">Xem trên GitHub →</span>
+            <a href="https://github.com/VuDuyHoang123/java-screen-share" target="_blank" class="project-link">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3 data-vi="Screen Sharing App" data-en="Screen Sharing App">Screen Sharing App</h3>
+                        <p data-vi="Ứng dụng truyền hình ảnh trực tiếp qua Java Sockets (UDP)." data-en="Real-time screen capture and streaming via Java Sockets (UDP).">Ứng dụng truyền hình ảnh trực tiếp qua Java Sockets (UDP).</p>
+                        <span class="view-more" data-vi="Xem trên GitHub →" data-en="View on GitHub →">Xem trên GitHub →</span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
+    </section>
 
-    </div>
-</section>
     <section id="about" class="container">
-        <h2 class="section-title">Về mình</h2>
+        <h2 class="section-title" data-vi="Về mình" data-en="About Me">Về mình</h2>
         <div class="about-content">
-            <p>Mình hiện là sinh viên chuyên ngành Công nghệ thông tin(hệ thống thông tin). Mình có niềm đam mê lớn với việc xây dựng các  Database hệ thống backend vững chắc và trải nghiệm người dùng mượt mà  Ngoài code, mình còn là fan cứng của nhiều dòng game</p>
+            <p data-vi="Mình hiện là sinh viên chuyên ngành Công nghệ thông tin (Hệ thống thông tin). Mình có niềm đam mê lớn với việc xây dựng Database, hệ thống backend vững chắc và trải nghiệm người dùng mượt mà." 
+               data-en="I am currently an IT student specializing in Information Systems. I have a strong passion for building databases, robust backend systems, and smooth user experiences.">
+               Mình hiện là sinh viên chuyên ngành Công nghệ thông tin (Hệ thống thông tin). Mình có niềm đam mê lớn với việc xây dựng Database, hệ thống backend vững chắc và trải nghiệm người dùng mượt mà.
+            </p>
         </div>
     </section>
 
     <section id="contact" class="container bg-dark">
-        <h2 class="section-title">Liên hệ</h2>
-        <p>Bạn có dự án thú vị? Hãy kết nối với mình nhé!</p>
+        <h2 class="section-title" data-vi="Liên hệ" data-en="Contact">Liên hệ</h2>
+        <p data-vi="Bạn có dự án thú vị? Hãy kết nối với mình nhé!" data-en="Have an interesting project? Let's connect!">Bạn có dự án thú vị? Hãy kết nối với mình nhé!</p>
         <div class="contact-links">
             <p>Email: dtdevil16@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/VuDuyHoang123" class="project-link" target="_blank">github.com/yourprofile
-    </a>
-</p>
+            <p>GitHub: <a href="https://github.com/VuDuyHoang123" class="contact-link" target="_blank">github.com/VuDuyHoang123</a></p>
         </div>
     </section>
 
@@ -104,5 +105,6 @@
         <p>&copy; 2026 Designed by Vũ Duy Hoàng</p>
     </footer>
 
+    <script src="../JS/ChangeLanguage.js"></script>
 </body>
 </html>
