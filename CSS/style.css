@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #2563eb;
+    --dark-color: #1e293b;
+    --light-color: #f8fafc;
+    --text-color: #334155;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 2rem; }
+nav ul li a { text-decoration: none; color: var(--dark-color); font-weight: 600; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+.highlight { color: var(--primary-color); }
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+/* Sections */
+.container { padding: 5rem 10%; }
+.bg-light { background: var(--light-color); }
+.bg-dark { background: var(--dark-color); color: white; text-align: center; }
+.section-title { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.skill-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.project-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.project-item:hover { transform: translateY(-10px); }
+.project-info { padding: 1.5rem; }
+/* Đặt màu trắng và bỏ gạch chân cho link GitHub ban đầu */
+a.project-link {
+    color: white ; /* Dùng !important để ưu tiên đè lên các màu khác nếu cần */
+    text-decoration: none; /* Không gạch chân */
+    font-weight: normal; /* In thường lúc bình thường */
+    display: inline-block; /* Đảm bảo hiệu ứng in đậm không làm hỏng bố cục */
+}
+
+/* Hiệu ứng khi di chuột vào (hover) */
+a.project-link:hover {
+    font-weight: bold; /* In đậm lên khi hover */
+    /* Bạn có thể thêm gạch chân nếu muốn ở đây bằng text-decoration: underline; */
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.project-item:hover .view-more {
+    text-decoration: underline;
+}
+footer { text-align: center; padding: 2rem; background: #111; color: #777; }
