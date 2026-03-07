@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <nav>
         <div class="logo">DevPortfolio</div>
         <ul>
             <li><a href="#hero">Home</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li> 
+            <li><a href="#certificates">Certificates</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><button id="lang-btn" onclick="toggleLanguage()">English</button></li>
@@ -23,8 +27,9 @@
 
     <section id="hero" class="hero">
         <div class="hero-content">
+            <img src="../Assets/Images/hinhTHe.jpg" alt="Vu Duy Hoang" class="hero-avatar">
             <h1 data-vi="Xin chào, mình là Vũ Duy Hoàng" data-en="Hi, I am Vu Duy Hoang">Xin chào, mình là Vũ Duy Hoàng</h1>
-            <p data-vi="Data Analyst || Database Administrator || Developer" data-en="Data Analyst || Database Administrator || Developer">Data Analyst || Database Administrator || Developer</p>
+            <p class="typing-container"><span id="typed"></span></p>
             <a href="#projects" class="btn" data-vi="Xem dự án của mình" data-en="View my projects">Xem dự án của mình</a>
         </div>
     </section>
@@ -92,19 +97,71 @@
         </div>
     </section>
 
-    <section id="contact" class="container bg-dark">
-        <h2 class="section-title" data-vi="Liên hệ" data-en="Contact">Liên hệ</h2>
-        <p data-vi="Bạn có dự án thú vị? Hãy kết nối với mình nhé!" data-en="Have an interesting project? Let's connect!">Bạn có dự án thú vị? Hãy kết nối với mình nhé!</p>
-        <div class="contact-links">
-            <p>Email: dtdevil16@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/VuDuyHoang123" class="contact-link" target="_blank">github.com/VuDuyHoang123</a></p>
+    
+
+
+    <section id="education" class="container bg-light">
+        <h2 class="section-title" data-vi="Học vấn" data-en="Education">Học vấn</h2>
+        <div class="education-item">
+            <h3 data-vi="Đại học Công nghệ " data-en="University of Technology">Đại học Công nghệ</h3>
+            <p><strong>2022 - 2026 (Expected)</strong></p>
+            <p data-vi="Chuyên ngành: Hệ thống thông tin" data-en="Major: Information Systems">Chuyên ngành: Hệ thống thông tin</p>
+            <p data-vi="GPA hiện tại: 3.59" data-en="Current GPA: 3.59">GPA hiện tại: 3.59</p>
         </div>
     </section>
+
+    <section id="experience" class="container">
+        <h2 class="section-title" data-vi="Kinh nghiệm làm việc" data-en="Professional Experience">Kinh nghiệm làm việc</h2>
+        <div class="experience-timeline">
+            <div class="exp-item">
+                <h3 data-vi="Đồ án cơ sở đồ án chuyên ngành có kinh nghiệm trong việc làm nhóm" data-en="Experienced in teamwork through Fundamental and Specialized Capstone Projects">Đồ án cơ sở đồ án chuyên ngành có kinh nghiệm trong việc làm nhóm</h3>
+                <p><em>Company Name | 06/2025 - Present</em></p>
+                <ul data-vi="<li>Phân tích dữ liệu và tối ưu hóa truy vấn SQL.</li><li>Hỗ trợ quản trị Database Oracle.</li>" 
+                    data-en="<li>Analyzing data and optimizing SQL queries.</li><li>Assisting in Oracle Database administration.</li>">
+                    <li>Phân tích dữ liệu và tối ưu hóa truy vấn SQL.</li>
+                    <li>Hỗ trợ quản trị Database Oracle.</li>
+                </ul>
+            </div>
+            </div>
+    </section>
+
+    <section id="certificates" class="container bg-light">
+        <h2 class="section-title" data-vi="Chứng chỉ" data-en="Certificates">Chứng chỉ</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h4 data-vi="B1 tiếng anh" data-en="CEFR Level B1 - Intermediate English">B1 tiếng anh</h4>
+               
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="container bg-dark">
+    <h2 class="section-title" data-vi="Liên hệ" data-en="Contact Me">Liên hệ</h2>
+    
+    <form action="https://formspree.io/f/xpqyzbbp" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email của bạn">
+        </div>
+        
+        <div class="form-group">
+            <label for="message" data-vi="Ghi chú" data-en="Notes">Ghi chú</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Nhập nội dung tin nhắn..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Contact Me Now</button>
+        <p>GitHub: <a href="https://github.com/VuDuyHoang123" class="contact-link" target="_blank">github.com/VuDuyHoang123</a></p>
+    </form>
+</section>
 
     <footer>
         <p>&copy; 2026 Designed by Vũ Duy Hoàng</p>
     </footer>
 
     <script src="../JS/ChangeLanguage.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../JS/TypeChar.js"></script>
+    
 </body>
 </html>
