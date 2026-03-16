@@ -1,6 +1,6 @@
 var typed = new Typed('#typed', {
     strings: [
-        'Data Analyst || Database Administrator || Developer'
+        'Data Analytics || Data Managemen || Web Application Developer'
     ],
     typeSpeed: 50,    // Tốc độ gõ (50-60 là vừa đẹp)
     loop: false,      // Quan trọng: Tắt vòng lặp để gõ xong là dừng
